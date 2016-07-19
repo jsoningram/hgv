@@ -35,7 +35,7 @@ echo
 echo "Installing for Ansible."
 echo
 apt-get -y install software-properties-common
-add-apt-repository -y ppa:ansible/ansible
+add-apt-repository -y ppa:ansible/ansible-1.9
 apt-get update
 apt-get -y install ansible
 ansible_version=`dpkg -s ansible 2>&1 | grep Version | cut -f2 -d' '`
